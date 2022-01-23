@@ -25,6 +25,43 @@ public class Main {
         b) stworzyć 2 objekty typu Pracownik i uzupełnić wszystkie pola
         c) wypisać metody toString() wszystkich objektów
 
+        */
+        Student stud1 = new Student();
+        Student stud2 = new Student();
+        stud1.setImie("Bartosz");
+        stud1.setNazwisko("Kolodziejczyk");
+        stud1.setSemestr(3);
+        stud1.setSrednia(3.8);
+        stud1.setIndeks(891367);
+
+        stud2.setImie("Adam");
+        stud2.setNazwisko("Nowak");
+        stud2.setSemestr(2);
+        stud2.setSrednia(4.3);
+        stud2.setIndeks(54253);
+
+        System.out.println(stud1.toString());
+        System.out.println(stud2.toString());
+
+        Pracownik prac1 = new Pracownik();
+        Pracownik prac2 = new Pracownik();
+
+        prac1.setImie("Artur");
+        prac1.setNazwisko("Kowalski");
+        prac1.setStaz(5);
+        prac1.setPensja(2590.99);
+        prac1.setStanowisko("Specjalista");
+
+        prac2.setImie("Pawel");
+        prac2.setNazwisko("Kowalczyk");
+        prac2.setStaz(10);
+        prac2.setPensja(6982.88);
+        prac2.setStanowisko("Kierownik");
+
+        System.out.println(prac1.toString());
+        System.out.println(prac2.toString());
+
+        /*
         zad.4 - Dla chętnych
         a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
         b) zaimplementować wszystkie metody, i stworzyć pola
