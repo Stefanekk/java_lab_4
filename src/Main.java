@@ -27,5 +27,17 @@ public class Main {
         b) wykorzystać wszystkie metody do implementacji pól
         c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
         */
+
+        Dom dom = new Dom();
+        Budynek bud = new Dom();
+        dom.setPow(120.0);
+        dom.setSzerokosc(12);
+        dom.setWysokosc(10);
+        System.out.println(dom.szerWys(12, 10));
+        System.out.println(dom.czyPrawda(dom.getSzerokosc(), dom.getWysokosc(), dom.getPow()));
+        dom.setAdres("Dabrowszczakow 2");
+        dom.setValue(6);
+        System.out.println(dom.toString());
+        System.out.println(bud.toString());
     }
 }
